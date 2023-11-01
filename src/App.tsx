@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Get, Put } from './utils/services/http';
+import React from 'react'
 
-function App() {
-
- const [Data, setData] = useState([])
+const App = () => {
   return (
-     <div>
-      app
-     </div>
-  );
+    <div>App</div>
+  )
 }
 
-export default App;
+export default App
