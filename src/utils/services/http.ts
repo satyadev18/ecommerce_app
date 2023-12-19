@@ -8,4 +8,4 @@ export const post = (url:string,payload:any) => axios.post(`${BASEURL}${url}`, p
 
 export const put = (url:string, payload:any) => axios.put(`${BASEURL}${url}`, payload);
 
-export const Delete = (url:string)=> axios.delete(`${BASEURL}${url}`)
+export const Delete = (url:string)=> axios.delete(`${BASEURL}${url}`
