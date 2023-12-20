@@ -3,18 +3,19 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import RegistrationComponent from '../features/auth/components/register/register'
 import LoginComponent from '../features/auth/components/login/login'
 import { get } from 'http'
+import HomeComponent from '../features/home/components/home'
 
 const UnprotectedRoutes = () => {
 
   
   return (
-    <div>
-        <BrowserRouter>
-        <Routes>
-            <Route path='/register' element={<RegistrationComponent/>}/>
-            <Route path='/login' element={<LoginComponent/>}/>
-            </Routes></BrowserRouter>
-    </div>
+    
+      <Routes>
+
+         <Route path='/login' element={<LoginComponent/>}/>
+            <Route path='/home' element={<HomeComponent/>}/>
+      </Routes>
+    
   )
 }
 
