@@ -5,6 +5,7 @@ import CartComponent from '../features/cart/components/cart'
 import ProfileComponent from '../features/profile/components/profile'
 import LoginComponent from '../features/auth/components/login/login'
 import HomeComponent from '../features/home/components/home'
+import ProductListComponent from '../features/products/components/product-list/product-list'
 
 const RouteModuleComponent = () => {
   return (
@@ -17,6 +18,7 @@ const RouteModuleComponent = () => {
             </Route>
             <Route path='/login' element={<LoginComponent/>}/>
             <Route path='/home' element={<HomeComponent/>}/>
+            <Route path='/product' element={<ProductListComponent/>}/>
         </Routes>
     </Router>
   )
